@@ -1,0 +1,31 @@
+*{
+    font-family: 'Lato', sans-serif;
+    
+}
+.container{
+    margin-top: 2vh;
+}
+nav{
+    background-color: #ef6c00 ;
+}
+
+.brand-logo{
+    font-weight: bold;
+}
+.material-icons{
+    color: #448aff;
+}
+.material-icons:hover{
+    color: #ef6c00;
+}
+
+.btn{
+    background-color: #448aff;
+}
+.btn:hover{
+    background-color: #ef6c00;
+}
+#btnMenu{
+    color: white;
+}
+

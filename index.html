@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+
+    <!-- Fonts of google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">TAREAS</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="container">
+
+        <form action="agregar-tarea" id="formularioTareasNueva">
+            <input type="text" placeholder="Nueva tarea">
+
+            <a class="waves-effect waves-light btn">Limpiar</a>
+            <a class="waves-effect waves-light btn">Agregar</a>
+
+        </form>
+
+        <ul class="collection with-header" id="coleccionDeTareas">
+            <li class="collection-header">
+                <h5>Tarea</h5>
+            </li>
+            <li class="collection-item">
+                <div>Llevar bolsa de arena<a href="#" class="secondary-content"><i
+                            class="material-icons secondary-content">delete</i></a><a href="#modal1"
+                        class="modal-trigger secondary-content"><i class="material-icons">edit</i></a></div>
+
+            </li>
+
+        </ul>
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Editar tarea</h4>
+                <p>Tarea que se desea editar</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Actualizar</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAsVqW73i5015WAeeOtl4BNpU7ebtPpz_Q",
+            authDomain: "tareas-70e12.firebaseapp.com",
+            projectId: "tareas-70e12",
+            storageBucket: "tareas-70e12.appspot.com",
+            messagingSenderId: "578576116001",
+            appId: "1:578576116001:web:35ee06d77067b0c7527660"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        var db = firebase.firestore();
+
+    </script>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
